@@ -1,0 +1,57 @@
+button {
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+// Button
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-black;
+  color: $color-white;
+  font-weight: $font-weight-normal;
+  font-size: inherit;
+  border: 1px solid $color-black;
+  padding: $s-size;
+  border-radius: $border-radius;
+  transition: $transition-fast;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.button--primary {
+  text-decoration: none;
+  &:hover {
+    background: darken($color-one, 5%);
+    border-color: $color-one;
+  }
+
+  .banner--button & {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.button--secondary {
+  @extend .button--primary;
+  border-color: $color-one;
+}
+
+.button--tertiary {
+  @extend .button--secondary;
+  border-color: $color-three;
+  background: transparent;
+
+  &:hover {
+    background: $color-three;
+  }
+}
+
+.button--link {
+  background: none;
+  border: none;
+  color: $color-nine;
+  padding: 0;
+}

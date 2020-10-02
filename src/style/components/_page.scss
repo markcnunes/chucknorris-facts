@@ -1,0 +1,11 @@
+.page {
+    padding-top: $l-size;
+    // &.page--keywords { }
+
+    @media (min-width: $screen-tablet) {
+        padding-top: 0;
+        &.page--keywords {
+            padding-bottom: $m-size;
+        }
+    }
+}

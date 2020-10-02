@@ -1,0 +1,64 @@
+// Colors - Code
+
+//-- base
+$color-black: #363f5a;
+$color-white: #fff;
+
+// d2c3ab
+
+//-- gray
+$gray: #d2c3ab;
+$light-gray: #ffe7c2;
+$light-gray-2: lighten($light-gray, 5%);
+$light-gray-3: #a5afd7;
+$color-eight: darken($gray, 5%);
+
+//-- colors
+$blue: #3e64ff;
+$pink: #b54b50;
+$green: #30e3ca;
+$purple: #883bec;
+$purple-light: #b362fc;
+$purple-dark: #301878;
+
+// Colors - Var
+$color-one: $pink;
+$color-two: $purple;
+$color-three: $blue;
+$color-four: $purple-light;
+$color-five: $light-gray-2;
+$color-six: $light-gray;
+$color-seven: $gray;
+$color-eight: $color-eight;
+$color-nine: $light-gray-3;
+
+// Spacing
+$xs-size: 0.6rem;
+$s-size: 1.2rem;
+$m-size: 1.6rem;
+$m-x-size: 2.4rem;
+$l-size: 3.2rem;
+$xl-size: 4.8rem;
+$xxl-size: 6.2rem;
+$xxxl-size: 8rem;
+$xsl-size: 9.2rem;
+
+// Screen size
+$screen-mobile-s: 23rem;
+$screen-mobile-m: 30rem;
+$screen-phablet: 40rem;
+$screen-tablet: 50rem;
+$screen-laptop: 70rem;
+
+// Font
+$font-family-primary: "Roboto", sans-serif;
+$font-family-secondary: "Secular One", sans-serif;
+$font-weight-light: 200;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+//Transition
+$transition-fast: 0.3s ease;
+
+// Border
+$border-radius: 4px;

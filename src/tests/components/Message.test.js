@@ -16,11 +16,27 @@ describe("Message test", () => {
   test("renders with loading", () => {
     wrapper = shallow(<Message />);
 
-    expect(wrapper.html()).toBe("<div>...loading</div>");
+    expect(wrapper.html()).toBe(
+      '<div class="message"><div class="container"><div>...loading</div></div></div>'
+    );
   });
 
   test("renders with data", async () => {
-    const data = {
+    const giphyApidata = {
+      data: {
+        data: [
+          {
+            images: {
+              fixed_height: {
+                url: "https://media2.giphy.com/media/test",
+              },
+            },
+          },
+        ],
+      },
+    };
+
+    const chuckNorrisApiData = {
       data: {
         icon_url: "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
         value: "Chuck Norris survived his execution. His executioners did not.",
@@ -28,7 +44,12 @@ describe("Message test", () => {
     };
 
     await act(async () => {
-      await axios.get.mockImplementationOnce(() => Promise.resolve(data));
+      await axios.get.mockImplementationOnce(() =>
+        Promise.resolve(giphyApidata)
+      );
+      await axios.get.mockImplementationOnce(() =>
+        Promise.resolve(chuckNorrisApiData)
+      );
       wrapper = mount(<Message />);
     });
 
@@ -36,7 +57,7 @@ describe("Message test", () => {
       "https://api.chucknorris.io/jokes/random"
     );
 
-    await expect(axios.get).toHaveBeenCalledTimes(1);
+    await expect(axios.get).toHaveBeenCalledTimes(2);
 
     wrapper.update();
 

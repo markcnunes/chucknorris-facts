@@ -1,0 +1,73 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Secular+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  letter-spacing: 1px;
+}
+
+body {
+  position: relative;
+  background: $color-white;
+  font-family: $font-family-primary;
+  line-height: 1.4;
+  font-size: $m-size;
+  color: $color-black;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: $m-x-size;
+}
+
+h3 {
+  font-size: $m-size;
+}
+
+h6 {
+  font-size: $s-size;
+}
+
+button {
+  cursor: pointer;
+  font-family: $font-family-primary;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+img {
+  max-width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: $color-white;
+  font-size: $m-size;
+  margin: 0 $xs-size;
+
+  &--underline {
+    text-decoration: underline;
+  }
+
+  &--simple {
+    margin: 0;
+  }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.CookieConsent {
+  background: $color-white !important;
+  color: $color-black !important;
+}

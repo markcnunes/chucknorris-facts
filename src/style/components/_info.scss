@@ -1,0 +1,12 @@
+.info {
+  margin-top: $l-size;
+  margin-bottom: $l-size;
+  color: $color-black;
+  text-align: center;
+  font-size: $s-size;
+
+  p {
+    padding: 0 $l-size;
+    opacity: 0.7;
+  }
+}

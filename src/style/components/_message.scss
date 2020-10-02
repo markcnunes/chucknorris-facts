@@ -1,0 +1,63 @@
+.message {
+  color: $color-black;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__box {
+    position: relative;
+    text-align: center;
+    padding: 120px $m-size $xl-size;
+    background: linear-gradient(180deg, $color-six 0%, $color-five 100%);
+    border-radius: $border-radius;
+  }
+
+  &__gif {
+    position: absolute;
+    overflow: hidden;
+    z-index: 2;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 60px);
+    display: flex;
+    margin: auto;
+    border-radius: $border-radius;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  h1 {
+    font-family: $font-family-secondary;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 120px;
+  }
+
+  h2 {
+    font-family: $font-family-secondary;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  .button {
+    margin-top: $m-size;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    padding-right: $l-size;
+    padding-left: $l-size;
+
+    img {
+      max-width: 25px;
+      margin: 0 $s-size;
+    }
+  }
+
+  @media (min-width: $screen-tablet) {
+    &__box {
+      padding-right: $l-size;
+      padding-left: $l-size;
+    }
+  }
+}
