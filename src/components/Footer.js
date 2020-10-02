@@ -37,8 +37,8 @@ const Footer = () => (
       <div className="footer__item footer__item--technology">
         Powered by
         <a
-          href="https://developers.giphy.com/"
-          title="Mark's website"
+          href="https://giphy.com/"
+          title="GIPHY"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -47,7 +47,7 @@ const Footer = () => (
         and
         <a
           href="https://api.chucknorris.io/"
-          title="Mark's website"
+          title="Chucknorris.io"
           target="_blank"
           rel="noopener noreferrer"
         >
