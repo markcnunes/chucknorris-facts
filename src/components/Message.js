@@ -11,7 +11,6 @@ const Message = () => {
 
   const handleFetchGif = () => {
     fetchGif().then((res) => {
-      console.log(res.data.data[0].images.fixed_height.url);
       const src = res.data.data[0].images.fixed_height.url;
       const { url } = res.data.data[0];
       setGifSrc(src);

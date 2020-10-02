@@ -24,6 +24,10 @@
 
       a {
         margin-top: $s-size;
+
+        &:first-of-type {
+          margin-bottom: $s-size;
+        }
       }
     }
   }
@@ -44,9 +48,12 @@
       flex-direction: row;
       a {
         margin-top: auto;
-        margin-left: $s-size;
-        margin-right: $s-size;
+        margin-left: $xs-size;
+        margin-right: $xs-size;
 
+        &:first-of-type {
+          margin-bottom: auto;
+        }
         &:last-of-type {
           margin-right: 0;
         }
@@ -63,14 +70,6 @@
 
     &__item {
       padding: 0;
-      &--technology a {
-        margin-left: $s-size;
-        margin-right: $s-size;
-
-        &:last-of-type {
-          margin-right: 0;
-        }
-      }
     }
   }
 }
