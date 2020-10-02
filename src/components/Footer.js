@@ -35,7 +35,16 @@ const Footer = () => (
         </a>
       </div>
       <div className="footer__item footer__item--technology">
-        Thanks to the APIs:
+        Powered by
+        <a
+          href="https://developers.giphy.com/"
+          title="Mark's website"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GIPHY
+        </a>
+        and
         <a
           href="https://api.chucknorris.io/"
           title="Mark's website"
@@ -43,15 +52,6 @@ const Footer = () => (
           rel="noopener noreferrer"
         >
           Chucknorris.io
-        </a>
-        and
-        <a
-          href="https://developers.giphy.com/"
-          title="Mark's website"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Giphy
         </a>
       </div>
     </div>
