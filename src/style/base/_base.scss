@@ -1,5 +1,5 @@
 // Fonts
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&family=Roboto:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -12,7 +12,7 @@ html {
 
 body {
   position: relative;
-  background: $color-white;
+  background: $color-three;
   font-family: $font-family-primary;
   line-height: 1.4;
   font-size: $m-size;

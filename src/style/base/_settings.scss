@@ -1,36 +1,20 @@
 // Colors - Code
 
 //-- base
-$color-black: #363f5a;
+$color-black: #090c2a;
 $color-white: #fff;
 
-// d2c3ab
-
-//-- gray
-$gray: #d2c3ab;
-$light-gray: #ffe7c2;
-$light-gray-2: lighten($light-gray, 5%);
-$light-gray-3: #a5afd7;
-$color-eight: darken($gray, 5%);
-
 //-- colors
-$blue: #3e64ff;
-$pink: #b54b50;
-$green: #30e3ca;
-$purple: #883bec;
-$purple-light: #b362fc;
-$purple-dark: #301878;
+$yellow: #ff9500;
+$yellow-2: mix($yellow, red, 65%);
+$light-blue: #131942;
+$gray: #f3f3f3;
 
 // Colors - Var
-$color-one: $pink;
-$color-two: $purple;
-$color-three: $blue;
-$color-four: $purple-light;
-$color-five: $light-gray-2;
-$color-six: $light-gray;
-$color-seven: $gray;
-$color-eight: $color-eight;
-$color-nine: $light-gray-3;
+$color-one: $yellow;
+$color-two: $yellow-2;
+$color-three: $gray;
+$color-five: $light-blue;
 
 // Spacing
 $xs-size: 0.6rem;
@@ -52,8 +36,8 @@ $screen-laptop: 70rem;
 
 // Font
 $font-family-primary: "Roboto", sans-serif;
-$font-family-secondary: "Secular One", sans-serif;
-$font-weight-light: 200;
+$font-family-secondary: "Mukta", sans-serif;
+$font-weight-light: 300;
 $font-weight-normal: 400;
 $font-weight-bold: 700;
 
@@ -62,3 +46,4 @@ $transition-fast: 0.3s ease;
 
 // Border
 $border-radius: 4px;
+$border-radius-extra: 25px;

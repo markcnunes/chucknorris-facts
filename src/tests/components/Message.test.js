@@ -17,7 +17,7 @@ describe("Message test", () => {
     wrapper = shallow(<Message />);
 
     expect(wrapper.html()).toBe(
-      '<div class="message"><div class="container"><div>...loading</div></div></div>'
+      '<div class="message"><div>...loading</div></div>'
     );
   });
 
@@ -61,7 +61,7 @@ describe("Message test", () => {
 
     wrapper.update();
 
-    await expect(wrapper.find("h2").text()).toEqual(
+    await expect(wrapper.find("h1").text()).toEqual(
       "Chuck Norris survived his execution. His executioners did not."
     );
   });
