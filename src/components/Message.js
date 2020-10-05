@@ -1,4 +1,5 @@
 import React from "react";
+import ShareButton from "./ShareButton";
 import UseFetchData from "./UseFetchData";
 
 const Message = () => {
@@ -34,6 +35,10 @@ const Message = () => {
           </a>
           <div className="message__box">
             <h1>{data}</h1>
+            <div className="message__share">
+              <h3>Share it</h3>
+              <ShareButton title={`Did you know? ${data}`} />
+            </div>
             <button className="button button--primary" onClick={handleClick}>
               Show Another Fact
             </button>

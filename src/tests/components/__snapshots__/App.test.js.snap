@@ -8,5 +8,20 @@ exports[`App test render component 1`] = `
   <Message />
   <Info />
   <Footer />
+  <ToastContainer
+    autoClose={5000}
+    closeButton={[Function]}
+    closeOnClick={true}
+    draggable={true}
+    draggablePercent={80}
+    hideProgressBar={false}
+    newestOnTop={false}
+    pauseOnFocusLoss={true}
+    pauseOnHover={true}
+    position="top-right"
+    role="alert"
+    rtl={false}
+    transition={[Function]}
+  />
 </div>
 `;

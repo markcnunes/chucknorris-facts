@@ -1,4 +1,5 @@
 import React from "react";
+import { ToastContainer } from "react-toastify";
 import Message from "./components/Message";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -11,6 +12,7 @@ function App() {
       <Message />
       <Info />
       <Footer />
+      <ToastContainer />
     </div>
   );
 }

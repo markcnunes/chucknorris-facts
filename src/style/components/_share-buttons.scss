@@ -1,0 +1,28 @@
+.share-buttons {
+    display: flex;
+    justify-content: space-between;
+
+    &__icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 17px;
+        width: 17px;
+    }
+    @media (min-width: $screen-tablet) {
+        justify-content: flex-start;
+    }
+}
+
+.share-buttons__item {
+    & + & {
+        margin-left: $xs-size;
+    }
+
+    @media (min-width: $screen-tablet) {
+        & + & {
+            margin-left: $m-size;
+        }
+    }
+}
