@@ -13,10 +13,10 @@ This project and its creators are not affiliated with Chuck Norris, any motion p
 - [Powered by GIPHY](https://giphy.com/)
 - [Chucknorris.io](https://api.chucknorris.io/)
 
-## `Contribute`
+### Contribute
 
 Contributions are always welcome!
 
-## `License`
+### License
 
 This distribution is covered by the **GNU GENERAL PUBLIC LICENSE**, Version 3, 29 June 2007.
