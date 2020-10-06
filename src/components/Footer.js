@@ -1,4 +1,5 @@
 import React from "react";
+import giphyLogo from "../img/Poweredby_100px-Black_VertLogo.png";
 
 const Footer = () => (
   <footer className="footer">
@@ -35,14 +36,18 @@ const Footer = () => (
         </a>
       </div>
       <div className="footer__item footer__item--technology">
-        Powered by
+        APIs:
         <a
           href="https://giphy.com/"
           title="GIPHY"
           target="_blank"
           rel="noopener noreferrer"
         >
-          GIPHY
+          <img
+            src={giphyLogo}
+            className="footer__item__logo"
+            alt="Powered by GIPHY"
+          />
         </a>
         and
         <a

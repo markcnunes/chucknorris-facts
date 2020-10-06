@@ -21,6 +21,7 @@
 
     &--technology {
       flex-direction: column;
+      align-items: center;
 
       a {
         margin-top: $s-size;
@@ -29,6 +30,9 @@
           margin-bottom: $s-size;
         }
       }
+    }
+    &__logo {
+      max-width: 80px;
     }
   }
 
@@ -47,7 +51,7 @@
     &__item--technology {
       flex-direction: row;
       a {
-        margin-top: auto;
+        margin-top: 0;
         margin-left: $xs-size;
         margin-right: $xs-size;
 
